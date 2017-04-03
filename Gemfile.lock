@@ -14,6 +14,7 @@ GEM
     mini_portile2 (2.1.0)
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
+    rake (12.0.0)
 
 PLATFORMS
   ruby
@@ -22,6 +23,7 @@ DEPENDENCIES
   aws-sdk (~> 2.9)
   dotenv (~> 2.2)
   nokogiri (~> 1.7)
+  rake (~> 12.0)
 
 RUBY VERSION
    ruby 2.4.1p111
