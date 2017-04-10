@@ -3,6 +3,13 @@ require 'nokogiri'
 require 'open-uri'
 require 'digest'
 require 'aws-sdk'
+require 'rollbar'
+
+if rollbar_access_token = ENV['ROLLBAR_ACCESS_TOKEN']
+  Rollbar.configure do |config|
+    config.access_token = rollbar_access_token
+  end
+end
 
 GERMAN_MONTHS = %w(Januar Februar März April Mai Juni Juli August September Oktober November Dezember)
 DATE_REGEX    = /(?<day_of_month>\d+)\. (?<month>[A-Za-zä]+) (?<year>\d{4})/
