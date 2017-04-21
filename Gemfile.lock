@@ -1,15 +1,16 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    aws-sdk (2.9.1)
-      aws-sdk-resources (= 2.9.1)
-    aws-sdk-core (2.9.1)
+    aws-sdk (2.9.10)
+      aws-sdk-resources (= 2.9.10)
+    aws-sdk-core (2.9.10)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.9.1)
-      aws-sdk-core (= 2.9.1)
+    aws-sdk-resources (2.9.10)
+      aws-sdk-core (= 2.9.10)
     aws-sigv4 (1.0.0)
     dotenv (2.2.0)
+    gem_config (0.3.1)
     jmespath (1.3.1)
     mini_portile2 (2.1.0)
     multi_json (1.12.1)
@@ -18,6 +19,8 @@ GEM
     rake (12.0.0)
     rollbar (2.14.1)
       multi_json
+    tries (0.3.2)
+      gem_config (~> 0.2)
 
 PLATFORMS
   ruby
@@ -28,6 +31,7 @@ DEPENDENCIES
   nokogiri (~> 1.7)
   rake (~> 12.0)
   rollbar (~> 2.14)
+  tries (~> 0.3)
 
 RUBY VERSION
    ruby 2.4.1p111

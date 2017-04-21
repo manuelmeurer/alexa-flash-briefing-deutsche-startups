@@ -1,9 +1,9 @@
-require 'dotenv/load'
-require 'nokogiri'
 require 'open-uri'
 require 'digest'
-require 'aws-sdk'
-require 'rollbar'
+require 'dotenv/load'
+require 'bundler'
+
+Bundler.require
 
 if rollbar_access_token = ENV['ROLLBAR_ACCESS_TOKEN']
   Rollbar.configure do |config|
@@ -28,7 +28,9 @@ task :update_feeds do
   end
 
   FEEDS.each do |name, url|
-    page = Nokogiri::HTML(open(url))
+    page = 5.tries(delay: 1) do
+      Nokogiri::HTML(open(url))
+    end
     posts = page.css('.post').take(5)
     items = posts.map do |post|
       url        = post.at_css('a')[:href]
