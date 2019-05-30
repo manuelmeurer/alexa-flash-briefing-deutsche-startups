@@ -2,6 +2,7 @@ require 'open-uri'
 require 'digest'
 require 'dotenv/load'
 require 'bundler'
+require 'dotenv-heroku/tasks'
 
 Bundler.require
 
