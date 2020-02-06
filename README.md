@@ -1,6 +1,6 @@
 # Alexa Flash Briefing Deutsche Startups
 
-Read the [blog post](https://github.com/manuelmeurer/alexa-flash-briefing-deutsche-startups/wiki/Blog-Post:-Simple-and-Powerful---the-Alexa-Flash-Briefing-Skill-API)!
+Read the [blog post](https://github.com/manuelmeurer/alexa-flash-briefing-deutsche-startups/wiki/Simple-and-Powerful---the-Alexa-Flash-Briefing-Skill-API)!
 
 This is the source code for the [Alexa Flash Briefing Skill for Deutsche Startups](https://www.amazon.de/Kraut-Computing-Deutsche-Startups/dp/B06Y5RZV24/).
 
