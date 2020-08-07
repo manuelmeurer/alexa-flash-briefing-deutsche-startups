@@ -17,7 +17,7 @@ GEM
     gem_config (0.3.2)
     jmespath (1.4.0)
     mini_portile2 (2.4.0)
-    nokogiri (1.10.7)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     rake (12.3.3)
     rollbar (2.23.2)
