@@ -15,7 +15,7 @@ GEM
     dotenv-heroku (0.0.1)
       rake
     gem_config (0.3.2)
-    jmespath (1.4.0)
+    jmespath (1.6.1)
     mini_portile2 (2.4.0)
     nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
